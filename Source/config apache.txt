@@ -1,0 +1,46 @@
+#NameVirtualHost *
+NameVirtualHost 10.8.16.34:80
+
+
+<VirtualHost 10.8.16.34:80>
+ServerAdmin webmaster@localhost
+ServerName cms.fnacin.local
+DocumentRoot /var/www/fnac_cms/public/back
+<Directory />
+Options FollowSymLinks
+AllowOverride All
+</Directory>
+</VirtualHost>
+
+<VirtualHost 10.8.16.34:80>
+ServerAdmin webmaster@localhost
+ServerName fnacin.local
+ServerAlias fnacin.local
+DocumentRoot /var/www/fnac_cms/public/mobile
+<Directory />
+Options FollowSymLinks
+AllowOverride All
+</Directory>
+</VirtualHost>
+
+<VirtualHost 10.8.16.34:80>
+ServerAdmin webmaster@localhost
+ServerName webservice.fnacin.local
+DocumentRoot /var/www/fnac_cms/public/ws
+<Directory />
+Options FollowSymLinks
+AllowOverride All
+</Directory>
+</VirtualHost>
+
+<VirtualHost 10.8.16.34:80>
+ServerAdmin webmaster@localhost
+ServerName intranet.fnacin.local
+DocumentRoot /var/www/fnac_cms/public/front
+<Directory />
+Options FollowSymLinks
+AllowOverride All
+</Directory>
+</VirtualHost>
+
+
